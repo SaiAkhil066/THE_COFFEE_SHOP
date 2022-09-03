@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.loader{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #1d1b1d;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.firsth1pre{
+    font-family: cursive;
+    font-size: 17px;
+    color: whitesmoke;
+}
+
+#imgpre{
+    width: 10vw;
+}
+
+.disappear{
+    animation: vanish 5s forwards;
+    
+}
+
+@keyframes vanish{
+    100%{
+        opacity: 0;
+        visibility: hidden;
+    }
+}
