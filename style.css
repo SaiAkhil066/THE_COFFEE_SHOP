@@ -52,6 +52,7 @@
   position: fixed;
   right: 60px;
   top: 20px;
+  
 }
 
 .input {
@@ -80,11 +81,13 @@
 
 .input:checked + .label {
   background-color: white;
+  
 }
 
 .input:checked + .label .circle {
   animation: toggleOn 0.4s linear forwards;
   background-color: black;
+  
 }
 
 @keyframes toggleOn {
@@ -245,6 +248,12 @@ nav{
   }
   
 
+  .autotyper{
+    margin-top: 15px;
+    margin-left: 270px;
+    font-family: 'Courier New', Courier, monospace;
+  }
+
 
 
 
@@ -362,7 +371,7 @@ span{
 .slider-container {
     position: relative;
     left: 25px;
-    top: 90px;
+    top: 30px;
     width: 300px;
     overflow: hidden;
     height: 200px;
@@ -374,6 +383,14 @@ span{
   .sliderImages{
     width: 300px;
     height: 200px;
+  }
+
+
+  .autotyper{
+    margin-top: 85px;
+    margin-left: 30px;
+    font-size: 8px;
+    font-family: 'Courier New', Courier, monospace;
   }
 
 
