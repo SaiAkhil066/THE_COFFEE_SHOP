@@ -5,12 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coffee Shop</title>
+    <style>
+
+    </style>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <div class="loader">
+
+    <!-- PRE LOADER STARTS-->
+      <div class="loader">
         <img src="/pre-gif.gif" alt="" id="imgpre" srcset="">
-    </div>
+    </div>  
     
     <!-- TOGGLE DAY-NIGHT START-->
     <div class="toggleTheme">
@@ -21,7 +27,21 @@
     </div>
     <!-- TOGGLE DAY-NIGHT END-->
     
-    <h1>WELCOME TO COFFEE SHOP</h1>
+    <!-- NAV BAR START-->
+
+    <nav>
+        <div class="main-nav" id="main-nav">
+            <img src="/logo.png" class="main-nav-img" alt="" srcset="">
+            
+            <input type="text" class="main-nav-input" placeholder=" &nbsp; Enter your location...">
+            <button class="main-nav-inputEnter firstfa"><i class="fa-solid fa-2x fa-person-booth "></i></button>
+            <button class="main-nav-inputEnter secondfa"><i class="fa-solid fa fa-person-booth "></i></button>
+            <a href="" class="btn"> <span>Signup</span> </a>
+            <a href="" class="btn btn-2"> <span>Login</span> </a>
+
+
+        </div>
+    </nav>
 
 
     <script src="script.js"></script>
