@@ -22,7 +22,7 @@ updateBody();
 
 function updateBody() {
   if (inputEl.checked) {
-    bodyEl.style.background = "black";
+    bodyEl.style.background = "darkgrey";
   } else {
     bodyEl.style.background = "white";
   }
@@ -39,7 +39,7 @@ function updateLocalStorage() {
 
 //SIGNUP AND LOGIN BUTTON JS
 
-const btnEl = document.querySelector(".btn");
+const btnEl = document.querySelector(".btn-slider");
 
 btnEl.addEventListener("mouseover", (event) => {
     const x = event.pageX - btnEl.offsetLeft;
@@ -95,7 +95,42 @@ function updateImg() {
   timeout = setTimeout(() => {
     currentImg++;
     updateImg();
-  }, 3000);
+  }, 1000);
+}
+
+
+
+
+//AUTO TYPER
+
+
+const containerEl = document.querySelector(".autotyper");
+
+const careers = ["Cappuccino...", "Mocca...", "Espresso...", "Americano...", "Latte...", "Robusta...", "Arabica...", "Black..."];
+
+let careerIndex = 0;
+
+let characterIndex = 0;
+
+updateText();
+
+function updateText() {
+  characterIndex++;
+  containerEl.innerHTML = `
+    <h1>With love, We sell ${careers[careerIndex].slice(0, 1) === "I" ? "an" : ""} ${careers[
+    careerIndex
+  ].slice(0, characterIndex)}</h1>
+    `;
+
+  if (characterIndex === careers[careerIndex].length) {
+    careerIndex++;
+    characterIndex = 0;
+  }
+
+  if (careerIndex === careers.length) {
+    careerIndex = 0;
+  }
+  setTimeout(updateText, 400);
 }
 
 
