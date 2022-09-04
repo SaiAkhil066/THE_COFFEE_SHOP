@@ -198,14 +198,86 @@ nav{
 
 
 
+
+
+
+.slider-container {
+    position: relative;
+    left: 270px;
+    top: 50px;
+    width: 1000px;
+    overflow: hidden;
+    height: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    z-index: -1;
+  }
+  
+  .image-container {
+    display: flex;
+    transition: transform 0.4s ease-in-out;
+  }
+  
+  .btn-slider {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    font-size: 20px;
+    opacity: 0.5;
+    cursor: pointer;
+  }
+  
+  .btn-slider.prev {
+    left: 10px;
+  }
+  
+  .btn-slider.next {
+    right: 10px;
+  }
+  
+  .btn-slider:hover {
+    opacity: 1;
+  }
+
+  .sliderImages{
+    background-size: contain;
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* RESPONSIVE WEBSITE FOR MOBILES */
 
 @media all and (max-width: 480px) { 
 
-#imgpre{
-    width: 20vw;
-}
-    
+    #imgpre{
+        width: 20vw;
+    }
+
 .main-nav-img{
     width: 150px;
     height: 70px;
@@ -215,7 +287,7 @@ nav{
 .toggleTheme{
     transition: .4s ;
     position: fixed;
-    right: 50px;
+    right: 60px;
     top: 20px;
   }
 
@@ -233,7 +305,6 @@ nav{
     width: 180px;
     height: 30px;
     margin-bottom: 10px;
-    
     
 }
 
@@ -265,6 +336,8 @@ span{
     text-align: center;
     display: flex;
     justify-content: center;
+    padding-left: 10px;
+   
 }
 
 
@@ -273,7 +346,7 @@ span{
     height: 0px;
     position: fixed;
     margin-left: 60px;
-    margin-top: 130px;
+    margin-top: 140px;
 
 
 }
@@ -285,6 +358,23 @@ span{
     height: 0px;
 }
 
+
+.slider-container {
+    position: relative;
+    left: 25px;
+    top: 90px;
+    width: 300px;
+    overflow: hidden;
+    height: 200px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    z-index: -1;
+  }
+
+  .sliderImages{
+    width: 300px;
+    height: 200px;
+  }
 
 
     
